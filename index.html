@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>JDM East Africa</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- TOP HERO BAR -->
+<div class="hero">
+  <div class="logo">JDM EAST AFRICA</div>
+</div>
+
+<!-- 4 TILE DASHBOARD -->
+<div class="grid">
+
+  <div class="tile" onclick="openSection('imports')">
+    PREMIUM IMPORTS
+  </div>
+
+  <div class="tile" onclick="openSection('auction')">
+    AUCTION IMPORTS
+  </div>
+
+  <div class="tile" onclick="openSection('showroom')">
+    WEEKLY SHOWROOMS
+  </div>
+
+  <div class="tile" onclick="openSection('inquiry')">
+    INQUIRY & IMPORT
+  </div>
+
+</div>
+
+<!-- MODAL SYSTEM -->
+<div id="modal" class="modal hidden">
+  <div class="modal-inner">
+    <button onclick="closeModal()" class="close">X</button>
+    <div id="content"></div>
+  </div>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
